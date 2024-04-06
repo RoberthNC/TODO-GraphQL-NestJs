@@ -1,0 +1,11 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  """Retorna un Hola Mundo"""
+  hello: String!
+
+  """Retorna un número random"""
+  randomNumber: Float!
+}
