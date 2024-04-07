@@ -8,4 +8,7 @@ type Query {
 
   """Retorna un número random"""
   randomNumber: Float!
+
+  """Retorna un número random entero entre 0 a to (10 por defecto)"""
+  randomNumberFromZero(to: Int): Int!
 }
