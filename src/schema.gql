@@ -33,9 +33,25 @@ type Query {
 type Mutation {
   """Crea un todo"""
   create(createTodoInput: CreateTodoInput!): Todo!
+
+  """Actualiza un todo"""
+  update(updateTodoInput: UpdateTodoInput!): Todo!
+
+  """Elimina un todo"""
+  remove(id: Int!): Boolean!
 }
 
 input CreateTodoInput {
   """Descripcion del todo"""
   description: String!
+}
+
+input UpdateTodoInput {
+  id: Int!
+
+  """Descripcion del todo (opcional)"""
+  description: String
+
+  """Estado del todo (todo)"""
+  done: Boolean
 }
