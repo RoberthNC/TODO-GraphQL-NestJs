@@ -31,6 +31,15 @@ type Query {
 
   """Retorna un todo por id"""
   todo(id: Int!): Todo!
+
+  """Conteo para los todos"""
+  totalTodos: Int!
+
+  """Conteo para los todos completados"""
+  completedTodos: Int!
+
+  """Conteo para los todos pendientes"""
+  pendingTodos: Int!
 }
 
 type Mutation {
