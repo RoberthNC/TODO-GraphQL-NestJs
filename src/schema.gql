@@ -24,7 +24,10 @@ type Query {
   randomNumberFromZero(to: Int): Int!
 
   """Retorna  todos los todos"""
-  todos: [Todo!]!
+  todos(
+    """Estado para obtener los realizados ó pendientes"""
+    statusTodos: Boolean
+  ): [Todo!]!
 
   """Retorna un todo por id"""
   todo(id: Int!): Todo!
